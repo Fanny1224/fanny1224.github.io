@@ -10,10 +10,12 @@
             line-height: 1.6;
             margin: 20px;
             background-image: url('background.jpg');
+            background-color: rgba(255, 255, 255, 0.5); 
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
             color: #fff; /* Set text color to white for better contrast */
+            text-align: center;
         }
         h1, h2, h3 {
             color: #BE77FF; /* Set heading text color to bright purple */
@@ -25,7 +27,7 @@
             position: fixed;
             bottom: 0;
             width: 100%;
-            background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent black background for better readability */
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for better readability */
             padding: 10px;
             text-align: center;
         }
@@ -75,48 +77,6 @@
     <button onclick="scrollToSection('academic-projects')">Academic Projects</button>
     <button onclick="scrollToSection('hobbies')">Hobbies</button>
 
-    <script>
-        window.onscroll = function() {
-            var researchInterestsSection = document.getElementById('research-interests');
-            var academicProjectsSection = document.getElementById('academic-projects');
-            var hobbiesSection = document.getElementById('hobbies');
-            var researchInterestsBtn = document.getElementById('research-interests-btn');
-            var academicProjectsBtn = document.getElementById('academic-projects-btn');
-            var hobbiesBtn = document.getElementById('hobbies-btn');
-
-            if (isInViewport(researchInterestsSection)) {
-                researchInterestsBtn.style.display = 'inline-block';
-            } else {
-                researchInterestsBtn.style.display = 'none';
-            }
-
-            if (isInViewport(academicProjectsSection)) {
-                academicProjectsBtn.style.display = 'inline-block';
-            } else {
-                academicProjectsBtn.style.display = 'none';
-            }
-
-            if (isInViewport(hobbiesSection)) {
-                hobbiesBtn.style.display = 'inline-block';
-            } else {
-                hobbiesBtn.style.display = 'none';
-            }
-        };
-
-        function isInViewport(element) {
-            var rect = element.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
-
-        function scrollToSection(sectionId) {
-            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
-    
+   
 </body>
 </html>
