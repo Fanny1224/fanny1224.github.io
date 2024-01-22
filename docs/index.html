@@ -74,5 +74,49 @@
     <button onclick="scrollToSection('research-interests')">Research Interests</button>
     <button onclick="scrollToSection('academic-projects')">Academic Projects</button>
     <button onclick="scrollToSection('hobbies')">Hobbies</button>
+
+    <script>
+        window.onscroll = function() {
+            var researchInterestsSection = document.getElementById('research-interests');
+            var academicProjectsSection = document.getElementById('academic-projects');
+            var hobbiesSection = document.getElementById('hobbies');
+            var researchInterestsBtn = document.getElementById('research-interests-btn');
+            var academicProjectsBtn = document.getElementById('academic-projects-btn');
+            var hobbiesBtn = document.getElementById('hobbies-btn');
+
+            if (isInViewport(researchInterestsSection)) {
+                researchInterestsBtn.style.display = 'inline-block';
+            } else {
+                researchInterestsBtn.style.display = 'none';
+            }
+
+            if (isInViewport(academicProjectsSection)) {
+                academicProjectsBtn.style.display = 'inline-block';
+            } else {
+                academicProjectsBtn.style.display = 'none';
+            }
+
+            if (isInViewport(hobbiesSection)) {
+                hobbiesBtn.style.display = 'inline-block';
+            } else {
+                hobbiesBtn.style.display = 'none';
+            }
+        };
+
+        function isInViewport(element) {
+            var rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    
 </body>
 </html>
