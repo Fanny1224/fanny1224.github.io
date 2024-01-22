@@ -9,9 +9,25 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #fff; /* Set text color to white for better contrast */
         }
         h1, h2, h3 {
-            color: #333;
+            color: #ffd700; /* Set heading text color to gold */
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for better readability */
+            padding: 10px;
+            text-align: center;
         }
     </style>
 </head>
@@ -38,6 +54,15 @@
     <footer>
         <p>Contact me at: ningyue@email.com</p>
     </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+    <button onclick="scrollToSection('research-interests')">Research Interests</button>
+    <button onclick="scrollToSection('academic-projects')">Academic Projects</button>
+    <button onclick="scrollToSection('hobbies')">Hobbies</button>
 </body>
 </html>
-
