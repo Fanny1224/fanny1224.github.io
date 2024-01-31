@@ -3,27 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Page</title>
+    <title>Ningyue's Personal Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-        }
-        header {
+            line-height: 1.6;
+            margin: 20px;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #fff; /* Set text color to white for better contrast */
             text-align: center;
-            margin-top: 50px;
         }
-        nav {
+        h1, h2, h3 {
+            color: #5B00AE; /* Set heading text color to bright purple */
+            background-color: rgba(255, 255, 255, 0.7); 
+            font-family: "Bradley Hand", cursive;
+            font-size: 5.0;
+            
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for better readability */
+            padding: 10px;
             text-align: center;
-            margin-top: 20px;
         }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
+        button {
+            padding: 10px 20px;
+            background-color: transparent; /* 设置背景为透明 */
+            color: white; /* 设置文字颜色为白色 */
+            border: 2px solid white; /* 设置方形边框 */
+            border-radius: 0; /* 去掉圆角 */
+            cursor: pointer; /* 鼠标悬停时显示手型光标 */
+            margin: 0 10px; /* 设置按钮间间距为零 */
         }
-        nav li {
-            display: inline;
-            margin: 0 10px;
-        }
+
     </style>
 </head>
 <body>
@@ -31,29 +51,35 @@
         <h1>Ningyue</h1>
         <p>PhD Candidate in Computer Science</p>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#projects">Honors Projects</a></li>
-            <li><a href="#interests">Other Interests</a></li>
-        </ul>
-    </nav>
-    <section id="home">
-        <h2>Home</h2>
-        <p>Insert your home content here...</p>
+    <section>
+        <h2>Research Interests</h2>
+        <p>I am passionate about artificial intelligence, machine learning, and natural language processing. My current research focuses on developing algorithms for sentiment analysis in social media data.</p>
     </section>
-    <section id="research">
-        <h2>Research</h2>
-        <p>Insert your research content here...</p>
+    <section>
+        <h2>Academic Projects</h2>
+        <h3>Project 1: Sentiment Analysis in Twitter Data</h3>
+        <p>Implemented a deep learning model to analyze sentiment in Twitter data, achieving an accuracy of 85%.</p>
+        <h3>Project 2: Chatbot Development</h3>
+        <p>Designed and implemented a chatbot using natural language processing techniques to assist users in information retrieval.</p>
     </section>
-    <section id="projects">
-        <h2>Honors Projects</h2>
-        <p>Insert your honors projects content here...</p>
+    <section>
+        <h2>Hobbies</h2>
+        <p>In my free time, I enjoy hiking, playing the piano, and experimenting with new recipes in the kitchen.</p>
     </section>
-    <section id="interests">
-        <h2>Other Interests</h2>
-        <p>Insert your other interests content here...</p>
-    </section>
+    <footer>
+        <p>Contact me at: ningyue@email.com</p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+    <button onclick="scrollToSection('research-interests')">Research Interests</button>
+    <button onclick="scrollToSection('academic-projects')">Academic Projects</button>
+    <button onclick="scrollToSection('hobbies')">Hobbies</button>
+
+   
 </body>
 </html>
