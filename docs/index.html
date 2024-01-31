@@ -11,7 +11,7 @@
         }
         body {
             font-family: "segoesc", sans-serif;
-            font-size: 5.0;
+            font-size: 10.0;
             line-height: 1.6;
             margin: 20px;
             background-size: cover;
@@ -24,19 +24,8 @@
         h1, h2, h3 {
             color: #fff;
             font-family: "segoesc", sans-serif;
-            font-size: 10.0;
+            font-size: 20.0;
             font-weight: bold;
-        }
-        introduction {
-            font-family: "segoesc", sans-serif;
-            font-size: 10.0;
-            margin: 20px 25% 20px 25%
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            color: #fff; /* Set text color to white for better contrast */
-            text-align: center;
-            background-color: rgba(0, 0, 0); /* Semi-transparent black background for better readability */
         }
         section {
             margin-bottom: 20px;
@@ -66,21 +55,21 @@
     </header>
         <img src="background.png" style="width: 500px; height: 300px;">
         <h1>Ningyue Fan</h1>
-            <introduction>
-                Hi, welcome to my homepage! I'm currently an undergraduate student of the Department of Physics, Fudan University. My research interests include accreting blackholes and deep learning in astrophysics.
-            </introduction>
+        <p>Hi, welcome to my homepage! I'm currently an undergraduate student of the Department of Physics, Fudan University. My research interests include accreting blackholes and deep learning in astrophysics.</p>
     </header>
 
-        <script>
+    <script>
         function goToAnotherPage() {
             window.location.href = 'home.html';
         }
     </script>
 
-    <button onclick="goToAnotherPage()">Home</button>
-    <button onclick="goToAnotherPage()">Research Interests</button>
-    <button onclick="goToAnotherPage()">Academic Projects</button>
-    <button onclick="goToAnotherPage()">Hobbies</button>
+    <div style="text-align: center;">
+        <button onclick="goToAnotherPage()">Home</button>
+        <button onclick="goToAnotherPage()">Research Interests</button>
+        <button onclick="goToAnotherPage()">Academic Projects</button>
+        <button onclick="goToAnotherPage()">Hobbies</button>
+    </div>
     
     <footer>
         <p>Contact me at: ningyuefan21@gmail.com or nyfan21@m.fudan.edu.cn</p>
