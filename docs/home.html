@@ -55,22 +55,31 @@
 </head>
 <body>
     </header>
-        <img src="background.png" style="width: 500px; height: 300px;">
-        <br>
-        <img src="home.png" style="width: 800px; height: 400px;">
+        <img src="head.png" style="width: 800px; height: 200px;">
     </header>
 
     <script>
-        function goToAnotherPage() {
+        function goToHome() {
             window.location.href = 'home.html';
+        }
+
+        function goToResearch() {
+            window.location.href = 'research.html';
+        }
+
+        function goToHonors() {
+            window.location.href = 'honorsprojects.html';
+        }
+        function goToInterests() {
+            window.location.href = 'interests.html';
         }
     </script>
 
     <div style="text-align: center;">
-        <button onclick="goToAnotherPage()">Home</button>
-        <button onclick="goToAnotherPage()">Research</button>
-        <button onclick="goToAnotherPage()">Honors Projects</button>
-        <button onclick="goToAnotherPage()">Other Interests</button>
+        <button onclick="goToHome()">Home</button>
+        <button onclick="goToResearch()">Research</button>
+        <button onclick="goToHonors()">Honors Projects</button>
+        <button onclick="goToInterests()">Other Interests</button>
     </div>
 
     <footer>
