@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ningyue's Personal Website</title>
+    <style>
+        @font-face {
+            font-family: "segoesc";
+            src: url("font/segoesc.ttf");
+        }
+        body {
+            font-family: "segoesc", sans-serif;
+            font-size: 15.0;
+            line-height: 1.6;
+            margin: 20px 0 20px 0;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #fff; /* Set text color to white for better contrast */
+            text-align: center;
+            background-color: rgba(0, 0, 0);
+            height: 900px;
+        }
+        h1, h2, h3 {
+            color: #fff;
+            font-family: "segoesc", sans-serif;
+            font-size: 25.0;
+            font-weight: bold;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for better readability */
+            padding: 10px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: transparent; /* 设置背景为透明 */
+            color: white; /* 设置文字颜色为白色 */
+            border: 2px solid white; /* 设置方形边框 */
+            border-radius: 0; /* 去掉圆角 */
+            cursor: pointer; /* 鼠标悬停时显示手型光标 */
+            margin: 0 10px; /* 设置按钮间间距为零 */
+        }
+        
+
+    </style>
+</head>
+<body>
+    </header>
+        <img src="background.png" style="width: 500px; height: 300px;">
+        <br>
+        <img src="home.png" style="width: 800px; height: 400px;">
+    </header>
+
+    <script>
+        function goToAnotherPage() {
+            window.location.href = 'home.html';
+        }
+    </script>
+
+    <div style="text-align: center;">
+        <button onclick="goToAnotherPage()">Home</button>
+        <button onclick="goToAnotherPage()">Research</button>
+        <button onclick="goToAnotherPage()">Honors Projects</button>
+        <button onclick="goToAnotherPage()">Other Interests</button>
+    </div>
+
+    <footer>
+        <p>Contact me at: ningyuefan21@gmail.com or nyfan21@m.fudan.edu.cn</p>
+    </footer>
+    
+</body>
+</html>
