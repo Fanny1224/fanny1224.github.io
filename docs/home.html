@@ -11,32 +11,22 @@
         }
         body {
             font-family: "segoesc", sans-serif;
-            font-size: 5.0;
+            font-size: 15.0;
             line-height: 1.6;
-            margin: 20px;
+            margin: 20px 0 20px 0;
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
             color: #fff; /* Set text color to white for better contrast */
             text-align: center;
-            background-color: rgba(0, 0, 0); /* Semi-transparent black background for better readability */
+            background-color: rgba(0, 0, 0);
+            height: 900px;
         }
         h1, h2, h3 {
             color: #fff;
             font-family: "segoesc", sans-serif;
-            font-size: 10.0;
+            font-size: 25.0;
             font-weight: bold;
-        }
-        introduction {
-            font-family: "segoesc", sans-serif;
-            font-size: 10.0;
-            margin: 20px 25% 20px 25%
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            color: #fff; /* Set text color to white for better contrast */
-            text-align: center;
-            background-color: rgba(0, 0, 0); /* Semi-transparent black background for better readability */
         }
         section {
             margin-bottom: 20px;
@@ -51,6 +41,7 @@
         }
         button {
             padding: 10px 20px;
+            font-size: 20px;
             background-color: transparent; /* 设置背景为透明 */
             color: white; /* 设置文字颜色为白色 */
             border: 2px solid white; /* 设置方形边框 */
@@ -65,13 +56,9 @@
 <body>
     </header>
         <img src="background.png" style="width: 500px; height: 300px;">
-        <h1>Ningyue Fan</h1>
-        <body>Hi, welcome to my homepage! I'm currently an undergraduate student of the Department of Physics, Fudan University. My research interests include accreting blackholes and deep learning in astrophysics.</body>
+        <br>
+        <img src="home.png" style="width: 800px; height: 400px;">
     </header>
-    
-    <footer>
-        <p>Contact me at: ningyuefan21@gmail.com or nyfan21@m.fudan.edu.cn</p>
-    </footer>
 
     <script>
         function goToAnotherPage() {
@@ -79,13 +66,16 @@
         }
     </script>
 
-    <button onclick="goToAnotherPage()">Home</button>
-    <button onclick="goToAnotherPage()">Research Interests</button>
-    <button onclick="goToAnotherPage()">Academic Projects</button>
-    <button onclick="goToAnotherPage()">Hobbies</button>
+    <div style="text-align: center;">
+        <button onclick="goToAnotherPage()">Home</button>
+        <button onclick="goToAnotherPage()">Research</button>
+        <button onclick="goToAnotherPage()">Honors Projects</button>
+        <button onclick="goToAnotherPage()">Other Interests</button>
+    </div>
 
-  <p> This is the link try to homepage!!!!</p>
-
-   
+    <footer>
+        <p>Contact me at: ningyuefan21@gmail.com or nyfan21@m.fudan.edu.cn</p>
+    </footer>
+    
 </body>
 </html>
