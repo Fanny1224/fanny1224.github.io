@@ -39,11 +39,22 @@
             padding: 10px;
             text-align: center;
         }
-        button {
+        button1 {
             padding: 10px 20px;
             font-size: 20px;
             background-color: transparent; /* 设置背景为透明 */
             color: white; /* 设置文字颜色为白色 */
+            border: 2px solid white; /* 设置方形边框 */
+            border-radius: 0; /* 去掉圆角 */
+            cursor: pointer; /* 鼠标悬停时显示手型光标 */
+            margin: 0 10px; /* 设置按钮间间距为零 */
+        }
+        button2 {
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: rgba(255,255,255,0.5); /* 设置背景为透明 */
+            color: black; /* 设置文字颜色为黑色 */
+            font-weight:bold;
             border: 2px solid white; /* 设置方形边框 */
             border-radius: 0; /* 去掉圆角 */
             cursor: pointer; /* 鼠标悬停时显示手型光标 */
@@ -110,10 +121,10 @@
     </script>
     
     <div style="text-align: center;">
-        <button onclick="goToHome()">Home</button>
-        <button onclick="goToResearch()">Research</button>
-        <button onclick="goToHonors()">Honors Projects</button>
-        <button onclick="goToInterests()">Other Interests</button>
+        <button1 onclick="goToHome()">Home</button>
+        <button1 onclick="goToResearch()">Research</button>
+        <button2 onclick="goToHonors()">Honors Projects</button>
+        <button1 onclick="goToInterests()">Other Interests</button>
     </div>
 
     <div class="container">
