@@ -20,7 +20,7 @@
             color: #fff; /* Set text color to white for better contrast */
             text-align: center;
             background-color: rgba(0, 0, 0);
-            height: 900px;
+            height: 1500px;
         }
         h1, h2, h3 {
             color: #fff;
@@ -49,29 +49,78 @@
             cursor: pointer; /* 鼠标悬停时显示手型光标 */
             margin: 0 10px; /* 设置按钮间间距为零 */
         }
+        .container {
+          display: flex;
+          align-items: center;
+          margin-right: 30px;
+        }
+        
+        .text {
+          flex: 1;
+        }
+        
+        .image {
+          flex: 1;
+          text-align: right;
+        }
+        
+        img {
+          width: 500px;
+          height: auto;
+        }
         
 
     </style>
 </head>
 <body>
     </header>
-        <img src="background.png" style="width: 500px; height: 300px;">
-        <br>
-        <img src="home.png" style="width: 800px; height: 400px;">
+        <img src="head.png" style="width: 600px; height: 150px;">
     </header>
 
     <script>
-        function goToAnotherPage() {
+        function goToHome() {
             window.location.href = 'home.html';
+        }
+
+        function goToResearch() {
+            window.location.href = 'research.html';
+        }
+
+        function goToHonors() {
+            window.location.href = 'honorsprojects.html';
+        }
+        function goToInterests() {
+            window.location.href = 'interests.html';
         }
     </script>
 
     <div style="text-align: center;">
-        <button onclick="goToAnotherPage()">Home</button>
-        <button onclick="goToAnotherPage()">Research</button>
-        <button onclick="goToAnotherPage()">Honors Projects</button>
-        <button onclick="goToAnotherPage()">Other Interests</button>
+        <button onclick="goToHome()">Home</button>
+        <button onclick="goToResearch()">Research</button>
+        <button onclick="goToHonors()">Honors Projects</button>
+        <button onclick="goToInterests()">Other Interests</button>
     </div>
+
+    <div class="container">
+        <div class="text">
+          <p>
+                In the context of electrodynamics classroom learning, we have conducted a preliminary study on the electromagnetic response behavior of electrons inside metals. On one hand, in the case of electrostatic fields, in order to satisfy the static equilibrium condition, the charge distribution inside an ideal conductor, such as a metal, should be zero. However, in more realistic scenarios, we understand that the surface charge distribution can only be regarded as a mathematical abstraction. In static equilibrium, electrons must necessarily have a finite thickness distribution in the vicinity of the metal surface. Furthermore, if we consider the quantum nature of electrons, they also exhibit tunneling behavior near the surface and have a probability distribution outside the surface. On the other hand, when electromagnetic waves are incident, we have described the response of electrons inside metals to oscillating electric fields using the Drude model in class. We have also derived the effective dielectric constant. However, the Drude model assumes a local response of electrons to external fields, meaning that electrons oscillate under the influence of the electric field at their current position. Additionally, it employs the long-wavelength approximation, neglecting variations in the field at the scale of the electron. Therefore, this model simplifies the force exerted on the actual electrons inside metals to some extent. A more general description should reflect the non-local spatial and temporal response of electrons to the field.
+              <b>
+                Hence, the core question addressed in this paper is: How can we re-model the forces acting on electrons inside metals to more accurately describe their response to external electric fields, whether in electrostatic or dynamic situations?
+              <b>
+                In this context, we first adopt the Navier-Stokes equations from fluid mechanics to model the collective behavior of the electron gas inside metals. By combining the equation of state and conservation equations for a zero-temperature Fermi gas, we obtain a complete dynamic description of the electron gas and derive the corresponding constitutive equation. Building upon this foundation, we employ perturbation expansion methods to solve for the charge distribution in a semi-infinite classical system, revealing an effective charge thickness of approximately $10^{-10}$ m near the metal surface. Moreover, we discover that due to the presence of the Fermi degeneracy pressure, which depends on the electron density gradient, a longitudinal electromagnetic wave mode similar to "sound waves" exists inside the metal when electromagnetic waves are incident. The constitutive relation allows us to derive the effective dielectric constant for both transverse and longitudinal wave modes of the electron gas inside the metal. We find that the oscillation response of electrons to external fields is local for the transverse wave mode, while it is non-local for the longitudinal wave mode. Specifically, combining Mie theory, we expand the incident and scattered fields in eigenmodes for a special finite system, namely an infinite cylindrical metal, and solve for the behavior of electromagnetic waves scattered by the metal. We observe surface resonance modes caused by local responses and internal resonance modes within the cylinder caused by non-local responses. Finally, to investigate the quantum effects of electrons near the metal surface, we semi-quantitatively self-consistently solve the single-particle Schrödinger equation for electrons in a potential well at the metal surface. We discover an exponential decay of the electron density distribution outside the surface and oscillations in the metal density inside the surface.
+              <b>
+              <b>
+                  在电动力学的课堂学习中，我们已经简单研究了金属内电子的电磁响应行为。一方面，在静电场的情况下，为了满足静电平衡条件，金属作为理想导体内部电荷分布应当为零.但是，在更为实际的情形中，我们知道面电荷分布只能作为一种数学抽象，在静电平衡时电子必然在金属表面附近有限厚度内有一体分布；进一步，若我们考虑电子的量子性，它们还会在表面附近有隧穿行为，在表面外也有一定的概率分布。另一方面，在电磁波入射时，课内我们通过Drude模型描述了金属内部电子对振荡电场的响应，并且求解了等效介电常数。但Drude模型的描述中，电子对外场的响应是局域的，即在当前所处位置的电场下做受迫振荡，且使用了长波近似，忽略电子尺度内场的变化。因此，该模型对实际的金属内电子的受力进行了一定的简化，更为一般的描述应当体现出金属内电子对场的空间与时间非局域响应。
+            因此，本文希望回答的核心问题是：如何通过对金属内电子受力的重新建模，来更精确地描述无论是静电还是动电情况下金属内电子对外电场的响应？
+              在这个背景下，我们首先采用流体力学中的Navier-Stokes方程对金属内电子气整体进行建模，并结合零温费米气的物态方程与流守恒方程，得到了对电子气完整的动力学描述，并写出了对应的本构方程。在此基础上，通过采用微扰展开方法，求解了半无限大经典体系内的电荷分布情况，得到了金属表面附近的有效电荷厚度约为$10^{-10}\M{m}$。同时，我们发现，因为依赖于电子密度梯度的费米简并压的存在，在电磁波入射时金属内部会有类似于“声波”的纵波电磁波模式存在。通过本构关系可以分别写出横波与纵波模式下金属内电子气的等效介电常数，从而发现横波模式下电子的振荡对外场的响应是局域的，而纵波模式下电子的振荡对外场的响应是非局域的。特别地，我们结合Mie theory，将一个特殊的有限大体系——无限长金属圆柱内外的入射场与散射场进行本征模式展开，解出了电磁波被其散射时的行为，并观察到局域响应造成的表面共振模式与非局域响应造成的柱体内部共振模式。最后，为了研究在金属表面附近电子的量子效应，我们半定量自洽求解了金属表面势阱处电子的单体薛定谔方程，发现了表面外部电子密度分布的指数衰减与表面内部金属密度的振荡。
+
+          </p>
+        </div>
+        <div class="image">
+          <img src="background.png" alt="我的照片">
+        </div>
+      </div>
 
     <footer>
         <p>Contact me at: ningyuefan21@gmail.com or nyfan21@m.fudan.edu.cn</p>
