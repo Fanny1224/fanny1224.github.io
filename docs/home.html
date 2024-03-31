@@ -63,6 +63,18 @@
             cursor: pointer; /* 鼠标悬停时显示手型光标 */
             margin: 0 10px; /* 设置按钮间间距为零 */
         }
+
+        .button3 {
+          padding: 10px 20px;
+          font-size: 20px;
+          background-color: rgba(255,255,255,0.5);
+          color: yellow;
+          font-weight:bold;
+          border: 2px solid white;
+          border-radius: 50%; /* 将值设置为按钮宽度和高度的一半 */
+          cursor: pointer;
+          margin: 0 10px;
+        }
         
         .container {
           display: flex;
@@ -129,6 +141,11 @@
         }
       }
     </script>
+
+    <div style="text-align: right; margin-bottom: 30px;">
+        <button class="button3" onclick="playAudio()">music</button>
+    </div>
+    
     <script>
         function goToHome() {
             window.location.href = 'home.html';
