@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ningyue's Personal Website</title>
+    <style>
+        @font-face {
+            font-family: "segoesc";
+            src: url("font/segoesc.ttf");
+        }
+        body {
+            font-family: "segoesc", sans-serif;
+            font-size: 15.0;
+            line-height: 1.6;
+            margin: 20px 0 20px 0;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #fff; /* Set text color to white for better contrast */
+            text-align: center;
+            background-color: rgba(0, 0, 0);
+            height: 2500px;
+        }
+        h1, h2, h3 {
+            color: #00FF00;
+            font-family: "segoesc", sans-serif;
+            font-size: 25.0;
+            font-weight: bold;
+            text-align: left;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for better readability */
+            padding: 10px;
+            text-align: center;
+        }
+        .button1 {
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: transparent; /* 设置背景为透明 */
+            color: white; /* 设置文字颜色为白色 */
+            border: 2px solid white; /* 设置方形边框 */
+            border-radius: 0; /* 去掉圆角 */
+            cursor: pointer; /* 鼠标悬停时显示手型光标 */
+            margin: 0 10px; /* 设置按钮间间距为零 */
+        }
+        .button2 {
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: rgba(255,255,255,0.5); /* 设置背景为透明 */
+            color: yellow; /* 设置文字颜色为黑色 */
+            font-weight:bold;
+            border: 2px solid white; /* 设置方形边框 */
+            border-radius: 0; /* 去掉圆角 */
+            cursor: pointer; /* 鼠标悬停时显示手型光标 */
+            margin: 0 10px; /* 设置按钮间间距为零 */
+        }
+        
+        .container {
+          display: flex;
+          align-items: center;
+          margin-right: 30px;
+          margin-left: 30px;
+        }
+        
+        .text {
+          flex: 0 0 800px;
+          text-align: left;
+          font-size: 18px;
+          line-height: 1.5;
+        }
+        
+        .image {
+          flex: 1；
+          display: flex;
+          justify-content: center;
+        }
+        
+        img {
+          width: 80%;
+          height: auto;
+          margin_top: 20px;
+          margin-bottom: 0px;
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+
+        .image .caption {
+            margin-top: 0px;
+            margin-botton: 20px;
+            text-align: center;
+            font-style: italic;
+          }
+
+        .left-align {
+            text-align: left;
+            margin-left: 30px;
+          }
+        
+        
+
+    </style>
+</head>
+<body>
+    </header>
+        <a href="index.html">
+            <img src="head.png" style="width: 600px; height: 150px;">
+        </a>
+    </header>
+
+    <script>
+        function goToHome() {
+            window.location.href = 'home.html';
+        }
+    
+        function goToResearch() {
+            window.location.href = 'research.html';
+        }
+    
+        function goToHonors() {
+            window.location.href = 'honorsprojects.html';
+        }
+        function goToInterests() {
+            window.location.href = 'interests.html';
+        }
+    </script>
+    
+    <div style="text-align: center; margin-bottom: 30px;">
+        <button class="button1" onclick="goToHome()">Home</button>
+        <button class="button1" onclick="goToResearch()">Research</button>
+        <button class="button1" onclick="goToHonors()">Publications</button>
+        <button class="button2" onclick="goToInterests()">Gallery</button>
+    </div>
+<hr>
+
+    <footer>
+        <p>Contact me at: ningyuefan21@gmail.com or nyfan21@m.fudan.edu.cn</p>
+    </footer>
+    
+</body>
+</html>
