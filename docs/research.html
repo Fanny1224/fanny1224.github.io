@@ -185,48 +185,6 @@
       </div>
     </div>
 
-    <div class="container">
-        <div class="text">
-        <p>
-            My research at SHAO is mainly about using machine learning to perform the foreground removal of the simulated 21cm signal from the Epoch of Reionization (EoR) observed by the Square Kilometer Array (SKA). Traditional methods of the foreground removal of the 21cm signal depends on the assumption that the foreground signal are smooth compared with 21cm signal, however, in the case of SKA, the complex beam effects and the point spread function (PSF) make the traditional methods difficult to work. Therefore, we try to use the convolutional neural network to improve the performance. The first part of the network is fork-structured, and the dirty skymap (the 21cm signal with all kinds of noises) and the PSF are put together into it. The output of this network is the clean skymap, with the PSF removed from the dirty skymap. Then the predicted clean skymap is put into the second part of the network, which is expected to extract the 21cm signal from the clean skymap.
-        </p>
-        </div>
-      </div>
-
-    <div class="container">
-        <div class="image">
-        <img src="research_fig/task.png" alt="task" style="width: 75%;">
-        <div class="caption">An illustration of the training task. An example of the dirty skymap, PSF signal and clean skymap.</div>
-      </div>
-    </div>
-
-    <div class="container">
-        <div class="image">
-        <img src="research_fig/network.png" alt="network" style="width: 75%;">
-        <div class="caption">An illustration of the fork-structured network.</div>
-      </div>
-    </div>
-
-    <div class="container">
-        <div class="image">
-        <img src="research_fig/skymap.png" alt="skymap" style="width: 75%;">
-        <div class="caption">The reconstruction of the clean skymap.</div>
-      </div>
-    </div>
-
-    <div class="container">
-        <div class="image">
-        <img src="research_fig/eor.png" alt="eor" style="width: 75%;">
-        <div class="caption">The reconstruction of the EoR signal.</div>
-      </div>
-    </div>
-
-    <div class="container">
-        <div class="image">
-        <img src="research_fig/ps.png" alt="power-spectrum" style="width: 75%;">
-        <div class="caption">A comparison between the 2D power spectrum of the input and reconstructed EoR signal. We can see that on the larger scale the network functions quite well.</div>
-      </div>
-    </div>
     
     <footer>
         <p>Contact me at: ningyuefan21@gmail.com or nyfan21@m.fudan.edu.cn</p>
