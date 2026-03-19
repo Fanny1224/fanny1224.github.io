@@ -104,7 +104,51 @@
             text-align: left;
             margin-left: 30px;
           }
+
+        /* ===== Gallery Layout ===== */
+        .gallery {
+            column-count: 4;           /* 控制列数 */
+            column-gap: 15px;
+            padding: 30px;
+        }
         
+        .gallery-item {
+            break-inside: avoid;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        /* hover 放大一点 */
+        .gallery-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(255,255,255,0.3);
+        }
+        
+        /* 不规则旋转 */
+        .rotate1 { transform: rotate(-2deg); }
+        .rotate2 { transform: rotate(1.5deg); }
+        .rotate3 { transform: rotate(-1deg); }
+        .rotate4 { transform: rotate(2deg); }
+        
+        /* 不同大小（制造不规则感） */
+        .small img { width: 90%; }
+        .large img { width: 105%; }
+        .tall img { aspect-ratio: 3/4; object-fit: cover; }
+        .wide img { aspect-ratio: 4/3; object-fit: cover; }
+        
+        /* 响应式 */
+        @media (max-width: 1000px) {
+            .gallery { column-count: 3; }
+        }
+        @media (max-width: 600px) {
+            .gallery { column-count: 2; }
+        }
         
 
     </style>
@@ -141,6 +185,92 @@
     </div>
 <hr>
 
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+    <div class="gallery-item rotate1 small">
+        <img src="gallery/1.jpg">
+    </div>
+
+    <div class="gallery-item rotate2 large">
+        <img src="gallery/2.jpg">
+    </div>
+
+    <div class="gallery-item rotate3 tall">
+        <img src="gallery/3.jpg">
+    </div>
+
+    <div class="gallery-item rotate4">
+        <img src="gallery/4.jpg">
+    </div>
+
+    <div class="gallery-item rotate2 wide">
+        <img src="gallery/5.jpg">
+    </div>
+
+    <div class="gallery-item rotate1">
+        <img src="gallery/6.jpg">
+    </div>
+
+    <div class="gallery-item rotate3 large">
+        <img src="gallery/7.jpg">
+    </div>
+
+    <div class="gallery-item rotate4 small">
+        <img src="gallery/8.jpg">
+    </div>
+
+    <div class="gallery-item rotate1 tall">
+        <img src="gallery/9.jpg">
+    </div>
+
+    <div class="gallery-item rotate2">
+        <img src="gallery/10.jpg">
+    </div>
+
+    <div class="gallery-item rotate3 wide">
+        <img src="gallery/11.jpg">
+    </div>
+
+    <div class="gallery-item rotate4 large">
+        <img src="gallery/12.jpg">
+    </div>
+
+    <div class="gallery-item rotate1">
+        <img src="gallery/13.jpg">
+    </div>
+
+    <div class="gallery-item rotate2 small">
+        <img src="gallery/14.jpg">
+    </div>
+
+    <div class="gallery-item rotate3">
+        <img src="gallery/15.jpg">
+    </div>
+
+    <div class="gallery-item rotate4 tall">
+        <img src="gallery/16.jpg">
+    </div>
+
+    <div class="gallery-item rotate1 wide">
+        <img src="gallery/17.jpg">
+    </div>
+
+    <div class="gallery-item rotate2">
+        <img src="gallery/18.jpg">
+    </div>
+
+    <div class="gallery-item rotate3 large">
+        <img src="gallery/19.jpg">
+    </div>
+
+    <div class="gallery-item rotate4 small">
+        <img src="gallery/20.jpg">
+    </div>
+
+</div>
+    
     <footer>
         <p>Contact me at: ningyuefan21@gmail.com or nyfan21@m.fudan.edu.cn</p>
     </footer>
